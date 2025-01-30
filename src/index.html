@@ -8,18 +8,105 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/WhatsApp Image 2025-01-27 at 16.50.20.png" alt="foto-perfil">
+            <img class="hero__logo" src="./images/theozinho_logo.jpeg" alt="foto-perfil">
             <p class="hero__text">
                 Meu aniversário está chegando!!<br/>
-                Começa em: 10d 12h 15s
+                Começa em: <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Ilha do Théo - Sicilia - Itália
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>horário</b>
+                        26 de Agosto de 2025 - 16:50
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>trajes</b>
+                        Fantasias de personagens Animes
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Comfirme sua Presença
+                </a>
+            </div>
         </div>
     </header>
-
+    <section class="event event--minha-ilha">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Minha pequena ilha</h2>
+                <p class="event__details__description">
+                    A Ilha do Theo é uma ilha na Itália. O Paraíso Escondido é um refúgio particular cercado por águas cristalinas e praias de areia branca. 
+                    No centro da ilha, uma mansão luxuosa combina arquitetura moderna e natureza, com amplas paredes de vidro, piscina infinita e um deck privativo. 
+                    O interior conta com suítes elegantes, spa, cinema e uma cozinha gourmet equipada com tecnologia de ponta.
+                    Além do conforto da mansão, a ilha oferece trilhas naturais, cachoeiras secretas e uma marina particular. 
+                    Para os amantes de aventura, há opções de mergulho, jet ski e passeios de barco pelos recifes de corais, proporcionando uma experiência exclusiva em meio à natureza intocada.
+                </p>
+            </div>
+            <img class="event__image" src="./images/local_img.png" alt="imagem da ilha" data-aos="flip-left">
+        </div>
+    </section>
+    
+    <section class="event event--sobre-mim event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Oi, eu sou o Théo</h2>
+                <p class="event__details__description">
+                    Eu sou apaixonado por aviões! Adoro ver eles voando bem alto no céu e imaginar como é pilotar uma grande aeronave. 
+                    Sempre que posso, pesquiso sobre diferentes tipos de aviões e fico fascinado com a tecnologia e a velocidade deles. 
+                    Meu sonho é um dia poder entrar na cabine de um piloto e sentir como é comandar um voo de verdade!
+                    Também adoro jogar Minecraft e criar meus próprios mundos cheios de aventuras. 
+                    Gosto de construir casas, castelos e até aeroportos para meus aviões imaginários. 
+                    Além dos jogos, gosto muito de desenhar! Passo horas inventando personagens, paisagens e até aviões incríveis no papel. 
+                    É muito divertido transformar minha imaginação em desenhos coloridos e cheios de detalhes!
+                </p>
+            </div>
+            <img class="event__image" src="./images/maxresdefault.png" alt="imagem de avião em desenho" data-aos="flip-right">
+        </div>
+    </section>
+    
+    <section class="event event--comidas-bebidas">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Comidas e Bebidas</h2>
+                <p class="event__details__description">
+                    O banquete de aniversário é um espetáculo de elegância e sofisticação, com uma mesa exuberante repleta de pratos finos e decorações impecáveis. 
+                    Lustres reluzentes iluminam o ambiente, enquanto arranjos florais delicados adornam cada canto, criando uma atmosfera encantadora. 
+                    Os convidados são recebidos com aperitivos refinados e taças de espumante, dando início a uma experiência gastronômica inesquecível.
+                    No cardápio, pratos elaborados combinam sabores requintados, desde entradas sofisticadas até sobremesas irresistíveis. 
+                    Um bolo deslumbrante, decorado com detalhes luxuosos, se destaca como a grande estrela da celebração. 
+                    Para finalizar a noite com perfeição, música ao vivo e brindes animados tornam o aniversário um momento memorável, repleto de charme e alegria.
+                </p>
+            </div>
+            <img class="event__image" src="./images/comidas.png" alt="comidas e bebidas" data-aos="flip-left">
+        </div>
+    </section>
+    
+    <section class="event event--fantasias event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Concurso de Melhor Fantasia!</h2>
+                <p class="event__details__description">
+                    Prepare sua melhor fantasia e venha brilhar na festa! Queremos ver criatividade, cores e muita diversão no nosso Concurso de Fantasias, onde os trajes mais incríveis serão premiados. 
+                    Capriche no visual e surpreenda a todos com sua originalidade, porque no final da festa teremos um prêmio surpresa para a melhor fantasia da noite!
+                    Seja herói, vilão, personagem encantado ou qualquer criação especial, o importante é entrar no clima e se divertir! 
+                    O júri estará de olho nos detalhes e na criatividade, então solte a imaginação e participe desse desafio. 
+                    Venha fazer parte dessa festa inesquecível e concorra a um prêmio misterioso que pode ser seu!
+                </p>
+            </div>
+            <img class="event__image" src="./images/fantasias.png" alt="crianças fantasiadas" data-aos="flip-right">
+        </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
